@@ -1,0 +1,72 @@
+{
+  "company": {
+    "name": "Prime bets",
+    "domain": "primebets.bet",
+    "firstUserName": "Prime Bets Oficial",
+    "firstUserReferralCode": "primebetsoficial"
+  },
+  "settings": {
+    "azUserToken":"68e7045b-778f-4447-bc6c-fcdba41d691d",
+    "depositMinimumAmount": "1",
+    "depositBonusPercent": "500",
+    "depositBonusFirstOnly" : true,
+    "depositTax": "0",
+    "depositTaxType": "MONEY,PERCENT",
+    "withdrawalMinimumAmount": "10",
+    "withdrawalAutomaticAmount": "200",
+    "withdrawalMaxDailyAmount": "1000",
+    "withdrawalTax": "0",
+    "withdrawalTaxType": "MONEY,PERCENT"
+  },
+  "socialMedia": {
+    "facebookInfo": "",
+    "instagramInfo": "",
+    "telegramInfo": "",
+    "twitterInfo": "",
+    "whatsappInfo": ""
+  },
+  "gameLinks": [
+    {
+      "alias": "double",
+      "name": "Double",
+      "url": "https://hatatori.github.io/works/double",
+      "active": true
+    },
+    {
+      "alias": "mines",
+      "name": "Mines",
+      "url": "https://hatatori.github.io/works/bomb",
+      "active": true
+    },
+    {
+      "alias": "crash",
+      "name": "Crash",
+      "url": "https://hatatori.github.io/works/linha",
+      "active": true
+    },
+    {
+      "alias": "777",
+      "name": "Roleta 777",
+      "url": "https://hatatori.github.io/works/777",
+      "active": false
+    },
+    {
+      "alias": "dice",
+      "name": "Dice",
+      "url": "https://hatatori.github.io/works/dice",
+      "active": false
+    },
+    {
+      "alias": "fruits",
+      "name": "Roleta Frutas",
+      "url": "https://hatatori.github.io/works/frutas",
+      "active": false
+    },
+    {
+      "alias": "penalti",
+      "name": "Penalti",
+      "url": "https://hatatori.github.io/works/gol/src",
+      "active": false
+    }
+  ]
+}
