@@ -10,7 +10,7 @@ A forma mais recomendada de instalar este pacote é através do [composer](http:
 Para instalar, basta executar o comando abaixo
 
 ```bash
-$ php composer.phar require vaironaegos/suitpay-sdk
+$ php composer.phar require astrotechlabs/suitpay-sdk
 ```
 
 ou adicionar esse linha
