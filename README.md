@@ -34,7 +34,7 @@ $suitPay = new SuitPayGateway(new SuitPayParams(
 
 return $suitPay->createPixCharge(new PixData(
     dueDate: date('Y-m-d'),
-    amount: $order->amount,
+    amount: 100,
     callbackUrl: $_ENV['PIX_WEBHOOK_URL'],
     clientData: new SuitPayCustomer(
         name: "Nome do Pagador",
