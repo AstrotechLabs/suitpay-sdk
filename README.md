@@ -26,24 +26,22 @@ na seção `require` do seu arquivo `composer.json`.
 ### Mínimo para usar
 
 ```php
-$suitePayConfig = Config::get('services.suitPay');
+$suitPay = new SuitPayGateway(new SuitPayParams(
+    clientId: $_ENV['CLIENT_ID'],
+    clientSecret: $_ENV['CLIENT_SECRET'],
+    isProduction: $_ENV['IS_PRODUCTION']
+));
 
-        $suitPay = new SuitPayGateway(new SuitPayParams(
-            clientId: $suitePayConfig['clientId'],
-            clientSecret: $suitePayConfig['clientSecret'],
-            isProduction: $suitePayConfig['isProduction']
-        ));
-
-        return $suitPay->createPixCharge(new PixData(
-            dueDate: date('Y-m-d'),
-            amount: $order->amount,
-            callbackUrl: $suitePayConfig['pixWebhookUrl'],
-            clientData: new SuitPayCustomer(
-                name: $order->customer->name,
-                document: $order->customer->cpf,
-                email: $order->customer->user->email
-            )
-        ));
+return $suitPay->createPixCharge(new PixData(
+    dueDate: date('Y-m-d'),
+    amount: $order->amount,
+    callbackUrl: $_ENV['PIX_WEBHOOK_URL'],
+    clientData: new SuitPayCustomer(
+        name: "Nome do Pagador",
+        document: "CPF do Pagador",
+        email: "E-mail do Pagador"
+    )
+));
 ```
 
 Saída
