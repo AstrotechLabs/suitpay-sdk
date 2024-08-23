@@ -1,8 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "astrotechlabs/suitpay-sdk",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Pacote facilitador para integraçaão do pix copia e cola com Suit Pay",
     "license": "MIT",
     "scripts": {
         "test": "phpunit --testdox --do-not-cache-result --configuration @core/@core/tests/phpunit.xml",
